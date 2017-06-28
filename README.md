@@ -8,7 +8,7 @@ _How many squares are there in an n x m grid?_
 To try to do something different in Android, to answer my uncle's question with a 3x3 grid and to understand why our guess was right.
 
 ### References
-Now I understand, thanks to these answers:
+I know and understand why we were right thanks to these answers:
 * [Quora: Find a formula to find the number of squares](https://www.quora.com/Consider-it-as-an-N*M-Grid-Can-you-find-a-formula-to-find-the-number-of-squares)
 
 * [how-many-squares-in-the-m-times-n-grid](https://math.stackexchange.com/questions/468148/how-many-squares-in-the-m-times-n-grid)
