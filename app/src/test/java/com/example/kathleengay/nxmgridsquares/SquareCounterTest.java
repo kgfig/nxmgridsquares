@@ -25,7 +25,7 @@ public class SquareCounterTest {
         final int m = 3;
         final int r = 1;
         final int count = 6;
-        assertEquals(count, SquareCounter.countSquares(n, m, r));
+        assertEquals(count, SquareCounter.countRxRSquares(n, m, r));
     }
 
     @Test
@@ -33,6 +33,6 @@ public class SquareCounterTest {
         final int count = 8;
         final int n = 2;
         final int m = 3;
-        assertEquals(count, SquareCounter.countSquares(n, m));
+        assertEquals(count, SquareCounter.countAllSquares(n, m));
     }
 }

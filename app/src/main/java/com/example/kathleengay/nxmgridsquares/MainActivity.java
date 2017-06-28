@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.GridLayout;
@@ -15,8 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.kathleengay.nxmgridsquares.squares.SquareCounter;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -147,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateAnswer() {
         if (currentN > 0 && currentM > 0) {
-            String correctAnswer = String.valueOf(SquareCounter.countSquares(currentN, currentM));
+            String correctAnswer = String.valueOf(SquareCounter.countAllSquares(currentN, currentM));
             answerView.setText(correctAnswer);
         }
     }
