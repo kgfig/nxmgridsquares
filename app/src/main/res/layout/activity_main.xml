@@ -91,16 +91,22 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/main_fl_grid_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/main_ll_answer_layout"
         android:layout_below="@id/main_ll_dimension_layout"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/panel_padding_vertical_half"
-        android:layout_marginTop="@dimen/panel_padding_vertical_half"
-        android:background="@android:color/darker_gray">
+        android:layout_marginTop="@dimen/panel_padding_vertical_half">
+
+        <GridLayout
+            android:id="@+id/main_fl_grid_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="3" />
 
     </FrameLayout>
-
 </RelativeLayout>

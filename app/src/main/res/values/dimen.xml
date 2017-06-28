@@ -8,4 +8,6 @@
     <dimen name="text_size_more_emphasis">32sp</dimen>
     <dimen name="screen_margin">16dp</dimen>
     <dimen name="textview_margin">8dp</dimen>
+    <dimen name="square_stroke_width">2dp</dimen>
+    <dimen name="square_size">64dp</dimen>
 </resources>
