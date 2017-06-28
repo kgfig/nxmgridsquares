@@ -34,8 +34,8 @@
             android:layout_marginLeft="@dimen/textview_margin"
             android:layout_marginRight="@dimen/textview_margin"
             android:layout_marginStart="@dimen/textview_margin"
-            android:digits="@string/digits"
             android:hint="n"
+            android:inputType="number"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_emphasis" />
 
@@ -55,8 +55,8 @@
             android:layout_marginLeft="@dimen/textview_margin"
             android:layout_marginRight="@dimen/textview_margin"
             android:layout_marginStart="@dimen/textview_margin"
-            android:digits="@string/digits"
             android:hint="m"
+            android:inputType="number"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_emphasis" />
 
