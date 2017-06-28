@@ -5,7 +5,7 @@ An app that does nothing but show (currently, at most a 7x7 grid) and answer the
 _How many squares are there in an n x m grid?_
 
 ### Why?
-To try to something different in Android, to answer my uncle's question with a 3x3 grid and to understand why our guess was right.
+To try to do something different in Android, to answer my uncle's question with a 3x3 grid and to understand why our guess was right.
 
 ### References
 Now I understand, thanks to these answers:
