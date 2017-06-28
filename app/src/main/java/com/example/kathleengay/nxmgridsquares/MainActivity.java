@@ -17,7 +17,7 @@ import com.example.kathleengay.nxmgridsquares.squares.SquareCounter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int MAX_SQUARES_VISIBLE = 7;
+    private static final int MAX_SQUARES_VISIBLE = 16;
 
     private EditText nView, mView;
     private TextView answerView;
