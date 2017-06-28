@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="panel_padding_vertical">32dp</dimen>
+    <dimen name="panel_padding_vertical_half">16dp</dimen>
+    <dimen name="edittext_width">48dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_emphasis">24sp</dimen>
+    <dimen name="text_size_more_emphasis">32sp</dimen>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="textview_margin">8dp</dimen>
+</resources>

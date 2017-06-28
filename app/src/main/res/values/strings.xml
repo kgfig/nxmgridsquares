@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NxMGridSquares</string>
+    <string name="title">How many squares are there in a </string>
+    <string name="by">by</string>
+    <string name="grid">grid?</string>
+    <string name="width">width</string>
+    <string name="height">height</string>
+    <string name="answer">Answer: </string>
+</resources>
