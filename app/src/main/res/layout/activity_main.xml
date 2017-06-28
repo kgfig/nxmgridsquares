@@ -33,6 +33,7 @@
             android:layout_marginLeft="@dimen/textview_margin"
             android:layout_marginRight="@dimen/textview_margin"
             android:layout_marginStart="@dimen/textview_margin"
+            android:digits="@string/digits"
             android:hint="n"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_emphasis" />
@@ -52,6 +53,7 @@
             android:layout_marginLeft="@dimen/textview_margin"
             android:layout_marginRight="@dimen/textview_margin"
             android:layout_marginStart="@dimen/textview_margin"
+            android:digits="@string/digits"
             android:hint="m"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_emphasis" />
@@ -80,6 +82,7 @@
             android:textSize="@dimen/text_size" />
 
         <TextView
+            android:id="@+id/main_tv_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -100,13 +103,10 @@
         android:layout_marginTop="@dimen/panel_padding_vertical_half">
 
         <GridLayout
-            android:id="@+id/main_fl_grid_container"
+            android:id="@+id/main_gl_grid_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:columnCount="3"
-            android:orientation="horizontal"
-            android:rowCount="3" />
-
+            android:orientation="horizontal" />
     </FrameLayout>
 </RelativeLayout>

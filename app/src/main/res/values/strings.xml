@@ -6,4 +6,5 @@
     <string name="width">width</string>
     <string name="height">height</string>
     <string name="answer">Answer: </string>
+    <string name="digits">0123456789</string>
 </resources>
