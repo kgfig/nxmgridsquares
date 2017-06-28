@@ -20,11 +20,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int MAX_SQUARES_VISIBLE = 7;
+
     private EditText nView, mView;
     private TextView answerView;
     private GridLayout grid;
-    private List<ImageView> squares;
-
     private int currentN, currentM;
 
     @Override
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateGrid() {
-        if (currentN > 0 && currentM > 0 && currentN <= 9 && currentM <= 9) {
+        if (currentN > 0 && currentM > 0 && currentN <= MAX_SQUARES_VISIBLE && currentM <= MAX_SQUARES_VISIBLE) {
             int gridSquares = grid.getChildCount();
             int squareSize = getResources().getDimensionPixelSize(R.dimen.square_size);
             final ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(squareSize, squareSize);
@@ -119,19 +119,12 @@ public class MainActivity extends AppCompatActivity {
                     grid.addView(createSquare(layoutParams));
                 }
             } else if (gridSquares > newSquaresCount) {
-                if (currentN < gridCol) {
-                    for (int row = gridRow - 1; row >= 0; row--) {
-                        for (int col = gridCol - 1; col >= currentN; col--) {
-                            grid.removeViewAt(row * gridCol + col);
-                        }
-                    }
-                }
+                int lastRow = currentM < gridRow ? currentM : 0;
+                int lastCol = currentN < gridCol ? currentN : 0;
 
-                if (currentM < gridRow) {
-                    for (int row = gridRow - 1; row >= currentM; row--) {
-                        for (int col = gridCol - 1; col >= 0; col--) {
-                            grid.removeViewAt(row * gridCol + col);
-                        }
+                for (int row = gridRow - 1; row >= lastRow; row--) {
+                    for (int col = gridCol - 1; col >= lastCol; col--) {
+                        grid.removeViewAt(row * gridCol + col);
                     }
                 }
             }
