@@ -34,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
         mView = (EditText) findViewById(R.id.main_et_height);
         grid = (GridLayout) findViewById(R.id.main_gl_grid_container);
 
-        grid.setColumnOrderPreserved(false);
-        grid.setRowOrderPreserved(false);
-
         final Context context = getApplicationContext();
         nView.addTextChangedListener(new TextWatcher() {
             @Override
@@ -124,13 +121,10 @@ public class MainActivity extends AppCompatActivity {
                         grid.removeViewAt(row * gridCol + col);
                     }
                 }
+                grid.setColumnCount(currentN);
+                grid.setRowCount(currentM);
             }
 
-            Log.e("this", "N count : " + grid.getColumnCount());
-            Log.e("this", "M count : " + grid.getRowCount());
-            Log.e("this", "Remaining child views : " + grid.getChildCount());
-            grid.setColumnCount(currentN);
-            grid.setRowCount(currentM);
         }
     }
 
